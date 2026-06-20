@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "chatgpt-context-bridge": {
+      "command": "node",
+      "args": [
+        "./scripts/context-bridge-mcp.mjs"
+      ],
+      "env": {
+        "CONTEXT_BRIDGE_TRANSPORT": "stdio"
+      }
+    }
+  }
+}

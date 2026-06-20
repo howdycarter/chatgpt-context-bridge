@@ -1,0 +1,36 @@
+{
+  "name": "chatgpt-context-bridge",
+  "version": "0.1.0",
+  "description": "Draft-only bridge for staging ChatGPT and Codex conversations into reviewed Homebase and Notion-ready artifacts.",
+  "author": {
+    "name": "Christopher Carter"
+  },
+  "license": "MIT",
+  "keywords": [
+    "chatgpt",
+    "mcp",
+    "homebase",
+    "notion",
+    "context"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ChatGPT Context Bridge",
+    "shortDescription": "Stage ChatGPT context into reviewed drafts.",
+    "longDescription": "Private, draft-only ingestion and MCP tooling for converting ChatGPT or Codex conversations into reviewable Homebase markdown, Notion payloads, and image-generation asset manifests.",
+    "developerName": "Christopher Carter",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP",
+      "Skills",
+      "Draft Staging"
+    ],
+    "defaultPrompt": [
+      "Stage this ChatGPT export with Context Bridge.",
+      "Turn a staged chat into a Homebase draft.",
+      "Create a Notion draft payload for this chat."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

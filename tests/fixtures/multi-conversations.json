@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fixture-chat-a",
+    "title": "First Exported Chat",
+    "create_time": 1781900000,
+    "mapping": {
+      "m1": {
+        "message": {
+          "author": { "role": "user" },
+          "content": { "parts": ["First chat should stage."] }
+        }
+      }
+    }
+  },
+  {
+    "id": "fixture-chat-b",
+    "title": "Second Exported Chat",
+    "create_time": 1781900001,
+    "mapping": {
+      "m1": {
+        "message": {
+          "author": { "role": "user" },
+          "content": { "parts": ["Second chat should also stage from the same export file."] }
+        }
+      }
+    }
+  }
+]

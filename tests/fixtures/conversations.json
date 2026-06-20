@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fixture-chat-1",
+    "title": "Implement Context Bridge",
+    "create_time": 1781900000,
+    "update_time": 1781900300,
+    "mapping": {
+      "root": {
+        "id": "root",
+        "message": null
+      },
+      "m1": {
+        "id": "m1",
+        "message": {
+          "id": "m1",
+          "author": { "role": "user", "name": "Chris" },
+          "create_time": 1781900001,
+          "content": {
+            "content_type": "text",
+            "parts": ["Please implement an MCP bridge. My email is chris@example.com and token is sk-proj-abc12345678901234567890."]
+          }
+        }
+      },
+      "m2": {
+        "id": "m2",
+        "message": {
+          "id": "m2",
+          "author": { "role": "assistant" },
+          "create_time": 1781900002,
+          "content": {
+            "content_type": "text",
+            "parts": ["Next: stage exports, redact secrets, create Homebase and Notion drafts, then test."]
+          }
+        }
+      }
+    }
+  }
+]

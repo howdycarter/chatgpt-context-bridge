@@ -1,0 +1,53 @@
+{
+  "name": "chatgpt-context-bridge",
+  "version": "0.1.0",
+  "description": "Private MCP bridge for staging ChatGPT and Codex conversations into reviewed Homebase and Notion drafts.",
+  "license": "MIT",
+  "author": "Christopher Carter",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "docs",
+    "openai-skills",
+    "plugin",
+    "src",
+    "tests",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    ".env.example"
+  ],
+  "bin": {
+    "context-bridge": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:http": "node -e \"process.env.CONTEXT_BRIDGE_TRANSPORT='http'; import('./dist/index.js')\"",
+    "dev": "tsx src/index.ts",
+    "cli": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:mcp": "vitest run tests/mcp-tools.test.ts",
+    "acceptance": "vitest run tests/acceptance.test.ts",
+    "verify": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.2",
+    "express": "^4.19.2",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^24.0.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

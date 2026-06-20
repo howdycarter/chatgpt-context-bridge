@@ -1,0 +1,13 @@
+interface:
+  display_name: "Context Bridge Ingest"
+  short_description: "Stage chat exports as redacted drafts."
+  brand_color: "#2563EB"
+  default_prompt: "Use $context-bridge-ingest to stage this ChatGPT export safely."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "chatgpt-context-bridge"
+      description: "Context Bridge MCP server"
+      transport: "stdio"
+policy:
+  allow_implicit_invocation: true
