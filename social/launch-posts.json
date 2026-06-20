@@ -1,0 +1,34 @@
+{
+  "repoUrl": "https://github.com/howdycarter/chatgpt-context-bridge",
+  "schedule": {
+    "longFormScheduledAt": "2026-06-20T13:45:00.000Z",
+    "xScheduledAt": "2026-06-20T14:05:00.000Z",
+    "timezone": "America/Chicago"
+  },
+  "accounts": {
+    "linkedin": "347355_linkedin",
+    "facebook": "347355_facebook",
+    "threads": "347355_threads",
+    "instagram": "347355_instagram",
+    "x": "347355_x"
+  },
+  "imageLocalPath": "C:\\Users\\built\\Documents\\Codex\\2026-06-20\\can\\outputs\\chatgpt-context-bridge-launch.png",
+  "posts": [
+    {
+      "name": "long-form",
+      "accounts": ["347355_linkedin", "347355_facebook", "347355_threads", "347355_instagram"],
+      "scheduled_at": "2026-06-20T13:45:00.000Z",
+      "content": {
+        "default": "I just open-sourced ChatGPT Context Bridge.\n\nThe problem it solves is simple: the best AI work often dies in the chat window.\n\nCodex is excellent at execution. ChatGPT is excellent at exploration, strategy, and image generation. But the handoff between “great conversation” and “usable operating context” is still messy.\n\nThis bridge turns that gap into an actual workflow:\n\n- ingest ChatGPT exports or selected chat captures\n- redact secrets and sensitive contact data\n- stage Homebase markdown drafts\n- stage Notion-ready payloads\n- register or generate image assets\n- expose it all through MCP tools\n- keep every canonical write behind a review gate\n\nWhy use this instead of Codex alone?\n\nBecause Codex is where the work gets done, but this makes the work reusable. It gives the chat a memory rail, a review rail, and a filing rail. Instead of letting good thinking disappear into another thread, it becomes structured, searchable, auditable context.\n\nThat is the 10X move: not “more automation,” but fewer lost decisions, fewer context resets, fewer copy/paste rituals, and a safer path from conversation to system of record.\n\nRepo: https://github.com/howdycarter/chatgpt-context-bridge\n\n#AI #MCP #OpenSource #ProductDesign #DesignEngineering #ChatGPT #Codex"
+      }
+    },
+    {
+      "name": "x",
+      "accounts": ["347355_x"],
+      "scheduled_at": "2026-06-20T14:05:00.000Z",
+      "content": {
+        "default": "I open-sourced ChatGPT Context Bridge.\n\nCodex is great at execution. But the best strategy, prompts, decisions, and assets often start in ChatGPT.\n\nThis turns chats into staged, redacted, reviewable Homebase/Notion context through MCP.\n\n10X because fewer context resets.\n\nhttps://github.com/howdycarter/chatgpt-context-bridge"
+      }
+    }
+  ]
+}
