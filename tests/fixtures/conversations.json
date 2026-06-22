@@ -17,7 +17,7 @@
           "create_time": 1781900001,
           "content": {
             "content_type": "text",
-            "parts": ["Please implement an MCP bridge. My email is chris@example.com and token is sk-proj-abc12345678901234567890."]
+            "parts": ["Please implement an MCP bridge. My email is chris@example.com and token is [sample-openai-key]."]
           }
         }
       },

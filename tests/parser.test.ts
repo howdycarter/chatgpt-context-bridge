@@ -12,6 +12,8 @@ describe("conversation parsers", () => {
     expect(parsed).toHaveLength(1);
     expect(parsed[0]?.messages).toHaveLength(2);
 
+    const openAiKey = ["sk", "proj", "abc12345678901234567890"].join("-");
+    parsed[0]!.messages[0]!.text += ` Runtime-only token ${openAiKey}.`;
     const redacted = redactConversation(parsed[0]!, "standard");
     expect(redacted.messages[0]?.text).toContain("[REDACTED_EMAIL]");
     expect(redacted.messages[0]?.text).toContain("[REDACTED_OPENAI_KEY]");

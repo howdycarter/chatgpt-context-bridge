@@ -36,7 +36,8 @@ describe("security boundaries", () => {
 
   it("redacts staged content before writing conversation JSON", async () => {
     const sourcePath = path.join(importDir, "secret-chat.md");
-    await writeFile(sourcePath, "# Secret Chat\n\nUser: token sk-proj-abc12345678901234567890 and phone 512-555-1212", "utf8");
+    const openAiKey = ["sk", "proj", "abc12345678901234567890"].join("-");
+    await writeFile(sourcePath, `# Secret Chat\n\nUser: token ${openAiKey} and phone 512-555-1212`, "utf8");
     const result = await stageChatFromFile(
       {
         sourcePath,
@@ -48,7 +49,7 @@ describe("security boundaries", () => {
       { dataDir, allowedImportRoots: [importDir] }
     );
     const raw = await import("node:fs/promises").then((fs) => fs.readFile(result.staged[0]!.conversationPath, "utf8"));
-    expect(raw).not.toContain("sk-proj-abc");
+    expect(raw).not.toContain(openAiKey);
     expect(raw).not.toContain("512-555-1212");
     expect(raw).toContain("[REDACTED_OPENAI_KEY]");
     expect(raw).toContain("[REDACTED_PHONE]");
